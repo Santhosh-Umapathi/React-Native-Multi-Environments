@@ -5,9 +5,26 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "setDevelopment": "ENVFILE=.env.development",
+    "setStaging": "ENVFILE=.env.staging",
+    "setProduction": "ENVFILE=.env.production",
+    "ios:clean": "cd ios && rm -rf ~/Library/Developer/Xcode/DerivedData/*",
+    "ios:dev": "./scripts/react-native/ios_dev.sh",
+    "ios:dev:release": "./scripts/react-native/ios_dev_release.sh",
+    "ios:staging": "./scripts/react-native/ios_staging.sh",
+    "ios:staging:release": "./scripts/react-native/ios_staging_release.sh",
+    "ios:production": "./scripts/react-native/ios_production.sh",
+    "ios:production:release": "./scripts/react-native/ios_production_release.sh",
+    "android:dev": "./scripts/react-native/android_dev.sh",
+    "android:dev:release": "./scripts/react-native/android_dev_release.sh",
+    "android:staging": "./scripts/react-native/android_staging.sh",
+    "android:staging:release": "./scripts/react-native/android_staging_release.sh",
+    "android:production": "./scripts/react-native/android_production.sh",
+    "android:production:release": "./scripts/react-native/android_production_release.sh",
+    "open-apk": "open ./android/app/build/outputs/apk/",
+    "open-bundle": "open ./android/app/build/outputs/bundle/",
+    "scripts:permission": "find ./scripts -type f -iname '*.sh' -exec chmod +x {} \\;"
   },
   "dependencies": {
     "react": "18.2.0",
