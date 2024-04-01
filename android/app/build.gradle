@@ -106,6 +106,8 @@ android {
         versionName "1.0"
         resValue 'string', 'build_config_package','com.testrnconfig'
         resValue "string", "APP_NAME", project.env.get("APP_NAME")
+        resValue "string", "APP_ICON_ANDROID", project.env.get("APP_ICON_ANDROID")
+        resValue "string", "APP_ICON_ANDROID_ROUND", project.env.get("APP_ICON_ANDROID_ROUND")
     }
     signingConfigs {
         debug {
