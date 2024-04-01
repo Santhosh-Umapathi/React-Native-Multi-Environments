@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ./scripts/react-native/change_app_icon.sh ../../.env.development && \
+
 echo "🚧 Setting up Development Environment 🚧"
 yarn setDevelopment && \
 
