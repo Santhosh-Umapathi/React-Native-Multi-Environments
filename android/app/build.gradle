@@ -105,6 +105,7 @@ android {
         versionCode 1
         versionName "1.0"
         resValue 'string', 'build_config_package','com.testrnconfig'
+        resValue "string", "APP_NAME", project.env.get("APP_NAME")
     }
     signingConfigs {
         debug {
